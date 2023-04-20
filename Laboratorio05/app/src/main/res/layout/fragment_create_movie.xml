@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayout"
+    tools:context=".CreateMovieFragment">
+
+    <!-- Title-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="New movie"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- name-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/cardLayout"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_value_edit_text"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:background="@color/cardLayout"
+            android:layout_height="wrap_content"
+
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Category-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/category_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/cardLayout"
+        android:hint="Category"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_textField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/category_value_edit_text"
+            android:layout_width="match_parent"
+            android:background="@color/cardLayout"
+            android:layout_height="wrap_content"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Descriptio-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/cardLayout"
+        android:hint="Description"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_textField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description_value_edit_text"
+            android:layout_width="match_parent"
+            android:background="@color/cardLayout"
+            android:layout_height="wrap_content"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Calification-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/calification_textField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/cardLayout"
+        android:hint="Calification"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_textField">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/calification_value_edit_text"
+            android:layout_width="match_parent"
+            android:background="@color/cardLayout"
+            android:layout_height="wrap_content"
+
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMIT"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/buttonColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calification_textField" />
+</androidx.constraintlayout.widget.ConstraintLayout>

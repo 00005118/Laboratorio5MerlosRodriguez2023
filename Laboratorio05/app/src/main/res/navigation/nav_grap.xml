@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/bilbleFragment">
+
+    <fragment
+        android:id="@+id/bilbleFragment"
+        android:name="com.melvin.laboratorio05.BilbleFragment"
+        android:label="fragment_bilble"
+        tools:layout="@layout/fragment_bilble" >
+        <action
+            android:id="@+id/action_bilbleFragment_to_createMovieFragment"
+            app:destination="@id/createMovieFragment" />
+        <action
+            android:id="@+id/action_bilbleFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.melvin.laboratorio05.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/createMovieFragment"
+        android:name="com.melvin.laboratorio05.CreateMovieFragment"
+        android:label="fragment_create_movie"
+        tools:layout="@layout/fragment_create_movie" />
+</navigation>
